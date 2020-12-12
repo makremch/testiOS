@@ -41,15 +41,16 @@ class BrandDetailsInteractor: BrandDetailsBusinessLogic, BrandDetailsDataStore
     }
     
     func loadPurchases(id : String){
+        print(id)
         worker = BrandDetailsWorker()
+        var newResp : NSDictionary = [:]
         worker?.loadPurchases().then(){
             response in
-            print(response)
             self.presenter!.successGettingPurchases(response:response)
         }.catch{ error in
             print(error)
-            //            let error : [NSDictionary] = []
-            //            self.presenter!.gettingArticlesFailure(response: error)
         }
     }
+    
+    
 }

@@ -22,15 +22,21 @@ protocol BrandDetailsDisplayLogic: class
 
 class BrandDetailsViewController: UIViewController, BrandDetailsDisplayLogic
 {
-    //    MARK:- Outlets declarations :
+    //    MARK:- Outlets declarations     :
     @IBOutlet weak var brandImageView     : UIImageView!
     @IBOutlet weak var descriptionLabel   : UILabel!
+    @IBOutlet weak var firstView          : UIView!
+    @IBOutlet weak var secondView         : UIView!
+    @IBOutlet weak var ChiffredAffaires   : UILabel!
+    @IBOutlet weak var commissionLabel    : UILabel!
     
     
     //    MARK:- var declarations:
     var interactor      : BrandDetailsBusinessLogic?
     var router          : (NSObjectProtocol & BrandDetailsRoutingLogic & BrandDetailsDataPassing)?
     var content         : NSDictionary = [:]
+    var purchases       : [NSDictionary] = []
+    var idOffer         : String = ""
     // MARK: Object lifecycle
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
@@ -82,9 +88,19 @@ class BrandDetailsViewController: UIViewController, BrandDetailsDisplayLogic
         self.title =  ((content["name"])! as! String)
         displayElements()
         designForImageBrand()
-        let id : String = content["offerId"]! as! String
-        print(content["offerId"]!)
-        self.interactor?.loadPurchases(id : id)
+        
+        
+        if let inthtest = content["offerId"] as? Int{
+            self.idOffer  = String(inthtest)
+        }
+        else if let inthtest = content["offerId"] as? String{
+            if Int(inthtest) != nil{
+                self.idOffer  = inthtest
+                
+            }
+        }
+        print(idOffer)
+        self.interactor?.loadPurchases(id : idOffer)
     }
     
     // MARK: Do something
@@ -128,9 +144,71 @@ class BrandDetailsViewController: UIViewController, BrandDetailsDisplayLogic
         self.brandImageView.layer.shadowOpacity       = 1
         self.brandImageView.layer.shouldRasterize     = true
         self.brandImageView.layer.rasterizationScale  = UIScreen.main.scale
+        
+        self.firstView.layer.cornerRadius        = 10
+        self.firstView.layer.shadowColor         = UIColor.systemGray5.cgColor
+        self.firstView.layer.shadowOffset        = .zero
+        self.firstView.layer.shadowRadius        = 10
+        self.firstView.layer.shadowPath          = UIBezierPath(rect: self.firstView.bounds).cgPath
+        self.firstView.backgroundColor           = UIColor.white
+        self.firstView.layer.shadowOpacity       = 1
+        self.firstView.layer.shouldRasterize     = true
+        self.firstView.layer.rasterizationScale  = UIScreen.main.scale
+        
+        self.secondView.layer.cornerRadius        = 10
+        self.secondView.layer.shadowColor         = UIColor.systemGray5.cgColor
+        self.secondView.layer.shadowOffset        = .zero
+        self.secondView.layer.shadowRadius        = 10
+        self.secondView.layer.shadowPath          = UIBezierPath(rect: self.secondView.bounds).cgPath
+        self.secondView.backgroundColor           = UIColor.white
+        self.secondView.layer.shadowOpacity       = 1
+        self.secondView.layer.shouldRasterize     = true
+        self.secondView.layer.rasterizationScale  = UIScreen.main.scale
+        
+        
+        
     }
     
+    var chiffreAffiare : NSNumber = 0
+    var commissions : NSNumber = 0
+    
     func displayData(response:[NSDictionary]){
-        print(response)
+        self.purchases = response
+//        print(response[0])
+//        print(content)
+        
+        for resp in response{
+            let c = content["offerId"]! as? Int
+            let r = resp["offerId"]! as? Int
+            let cS = content["offerId"]! as? String
+            let rS = resp["offerId"]! as? String
+            
+            if c == r {
+                self.chiffreAffiare = (resp["amount"]!) as! NSNumber
+                print(resp["amount"]!,chiffreAffiare)
+//                self.commissions = (resp["commission"]!) as! NSNumber
+                
+                print("////////////////////////")
+//                self.chiffreAffiare = String((resp["amount"]! as? Int)!)
+//                self.commission = String((resp["commission"]! as? Int)!)
+            }
+            else if  cS == rS{
+                if cS != nil && rS != nil{
+                    print("??????????????????????????????????????????????")
+                }
+            }
+        }
+//        ChiffredAffaires.text = (chiffreAffiare as? Float) as? String
+//        commissionLabel.text =  (commissions as? Float) as? String
+//        
+//        if let inthtest = chiffreAffiare as? Float{
+//            ChiffredAffaires.text = String(inthtest)
+//        }
+//        else if let inthtest = chiffreAffiare as? String {
+//            if Float(inthtest) != nil{
+//                ChiffredAffaires.text = inthtest
+//                
+//            }
+//        }
     }
 }
