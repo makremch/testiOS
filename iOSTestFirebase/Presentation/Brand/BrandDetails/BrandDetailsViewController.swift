@@ -178,23 +178,24 @@ class BrandDetailsViewController: UIViewController, BrandDetailsDisplayLogic
 //        print(content)
         
         for resp in response{
-            let c = content["offerId"]! as? Int
-            let r = resp["offerId"]! as? Int
+            let c  = content["offerId"]! as? Int
+            let r  = resp["offerId"]! as? Int
             let cS = content["offerId"]! as? String
             let rS = resp["offerId"]! as? String
-            
+            var CA =  resp["amount"]! as? String
             if c == r {
-                self.chiffreAffiare = (resp["amount"]!) as! NSNumber
-                print(resp["amount"]!,chiffreAffiare)
+                CA = (resp["amount"]!) as? String
+                print(resp)
+                print(resp["amount"]!," - ",chiffreAffiare," - ",resp["commission"]!)
+                commissionLabel.text = ((resp["commission"]!) as? String)! + " £"
+                ChiffredAffaires.text = ((CA ?? "108.33") as String) + " £"
 //                self.commissions = (resp["commission"]!) as! NSNumber
-                
-                print("////////////////////////")
 //                self.chiffreAffiare = String((resp["amount"]! as? Int)!)
 //                self.commission = String((resp["commission"]! as? Int)!)
             }
             else if  cS == rS{
-                if cS != nil && rS != nil{
-                    print("??????????????????????????????????????????????")
+                if cS != nil && rS != nil && CA != nil{
+                    print("Error !")
                 }
             }
         }
