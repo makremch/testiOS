@@ -10,6 +10,18 @@
 		A320168B063BD61EA434C3D9 /* Pods_iOSTestFirebase_iOSTestFirebaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F8C291F475D8ACD62917A6 /* Pods_iOSTestFirebase_iOSTestFirebaseUITests.framework */; };
 		BD145E38C52136FABE930E06 /* Pods_iOSTestFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404693A6B9A88FD7699C68CC /* Pods_iOSTestFirebase.framework */; };
 		EE7A150B41C1F30D5B853D6E /* Pods_iOSTestFirebaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B1D8616E6302240779F13A /* Pods_iOSTestFirebaseTests.framework */; };
+		F47302E925894705001A3AB6 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47302E325894705001A3AB6 /* RegisterPresenter.swift */; };
+		F47302EA25894705001A3AB6 /* RegisterWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47302E425894705001A3AB6 /* RegisterWorker.swift */; };
+		F47302EB25894705001A3AB6 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47302E525894705001A3AB6 /* RegisterRouter.swift */; };
+		F47302EC25894705001A3AB6 /* RegisterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47302E625894705001A3AB6 /* RegisterModels.swift */; };
+		F47302ED25894705001A3AB6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47302E725894705001A3AB6 /* RegisterViewController.swift */; };
+		F47302EE25894705001A3AB6 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47302E825894705001A3AB6 /* RegisterInteractor.swift */; };
+		F47302F825896029001A3AB6 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47302F225896029001A3AB6 /* LoginPresenter.swift */; };
+		F47302F925896029001A3AB6 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47302F325896029001A3AB6 /* LoginWorker.swift */; };
+		F47302FA25896029001A3AB6 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47302F425896029001A3AB6 /* LoginRouter.swift */; };
+		F47302FB25896029001A3AB6 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47302F525896029001A3AB6 /* LoginModels.swift */; };
+		F47302FC25896029001A3AB6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47302F625896029001A3AB6 /* LoginViewController.swift */; };
+		F47302FD25896029001A3AB6 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47302F725896029001A3AB6 /* LoginInteractor.swift */; };
 		F49B5B362582D8D800BF113F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49B5B352582D8D800BF113F /* AppDelegate.swift */; };
 		F49B5B382582D8D800BF113F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49B5B372582D8D800BF113F /* SceneDelegate.swift */; };
 		F49B5B3A2582D8D800BF113F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49B5B392582D8D800BF113F /* ViewController.swift */; };
@@ -74,6 +86,18 @@
 		BE02A2782DCE1C3BA6D3EA11 /* Pods-iOSTestFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTestFirebase.release.xcconfig"; path = "Target Support Files/Pods-iOSTestFirebase/Pods-iOSTestFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		D3F8C291F475D8ACD62917A6 /* Pods_iOSTestFirebase_iOSTestFirebaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSTestFirebase_iOSTestFirebaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44E5619CF65D975A5B9DD41 /* Pods-iOSTestFirebaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTestFirebaseTests.release.xcconfig"; path = "Target Support Files/Pods-iOSTestFirebaseTests/Pods-iOSTestFirebaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		F47302E325894705001A3AB6 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		F47302E425894705001A3AB6 /* RegisterWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWorker.swift; sourceTree = "<group>"; };
+		F47302E525894705001A3AB6 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
+		F47302E625894705001A3AB6 /* RegisterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModels.swift; sourceTree = "<group>"; };
+		F47302E725894705001A3AB6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F47302E825894705001A3AB6 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		F47302F225896029001A3AB6 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		F47302F325896029001A3AB6 /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		F47302F425896029001A3AB6 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		F47302F525896029001A3AB6 /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
+		F47302F625896029001A3AB6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F47302F725896029001A3AB6 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		F49B5B322582D8D800BF113F /* iOSTestFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTestFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49B5B352582D8D800BF113F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F49B5B372582D8D800BF113F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +192,41 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F47302CB258940BB001A3AB6 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F47302CD258940DD001A3AB6 /* Register */,
+				F47302CC258940CF001A3AB6 /* Login */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F47302CC258940CF001A3AB6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F47302F225896029001A3AB6 /* LoginPresenter.swift */,
+				F47302F325896029001A3AB6 /* LoginWorker.swift */,
+				F47302F425896029001A3AB6 /* LoginRouter.swift */,
+				F47302F525896029001A3AB6 /* LoginModels.swift */,
+				F47302F625896029001A3AB6 /* LoginViewController.swift */,
+				F47302F725896029001A3AB6 /* LoginInteractor.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F47302CD258940DD001A3AB6 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				F47302E325894705001A3AB6 /* RegisterPresenter.swift */,
+				F47302E425894705001A3AB6 /* RegisterWorker.swift */,
+				F47302E525894705001A3AB6 /* RegisterRouter.swift */,
+				F47302E625894705001A3AB6 /* RegisterModels.swift */,
+				F47302E725894705001A3AB6 /* RegisterViewController.swift */,
+				F47302E825894705001A3AB6 /* RegisterInteractor.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		F49B5B292582D8D800BF113F = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +301,7 @@
 		F49B5B912582DE7700BF113F /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F47302CB258940BB001A3AB6 /* Authentication */,
 				F49B5BDB2582FB4E00BF113F /* Brand */,
 				F49B5B9B2582DED600BF113F /* Articles */,
 			);
@@ -545,6 +605,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F49B5BE625830EAA00BF113F /* BrandViewController.swift in Sources */,
+				F47302EE25894705001A3AB6 /* RegisterInteractor.swift in Sources */,
 				F49B5BE225830EAA00BF113F /* BrandPresenter.swift in Sources */,
 				F49B5CD92583B51900BF113F /* CustomCollectionPremiumCell.swift in Sources */,
 				F49B5BEF2583107100BF113F /* BrandAPI.swift in Sources */,
@@ -555,22 +616,33 @@
 				F49B5BE425830EAA00BF113F /* BrandRouter.swift in Sources */,
 				F49B5BE525830EAA00BF113F /* BrandModels.swift in Sources */,
 				F49B5BA92582DEFC00BF113F /* ArticlesModels.swift in Sources */,
+				F47302FD25896029001A3AB6 /* LoginInteractor.swift in Sources */,
+				F47302F825896029001A3AB6 /* LoginPresenter.swift in Sources */,
 				F49B5CE42583C5D900BF113F /* BrandDetailsPresenter.swift in Sources */,
+				F47302FA25896029001A3AB6 /* LoginRouter.swift in Sources */,
 				F49B5BF42583145000BF113F /* MenuViewController.swift in Sources */,
+				F47302ED25894705001A3AB6 /* RegisterViewController.swift in Sources */,
 				F49B5B3A2582D8D800BF113F /* ViewController.swift in Sources */,
 				F49B5CE82583C5D900BF113F /* BrandDetailsViewController.swift in Sources */,
+				F47302F925896029001A3AB6 /* LoginWorker.swift in Sources */,
+				F47302EA25894705001A3AB6 /* RegisterWorker.swift in Sources */,
 				F49B5BA62582DEFC00BF113F /* CustomCell.swift in Sources */,
 				F49B5B962582DEB100BF113F /* ArticleAPI.swift in Sources */,
 				F49B5C1025831B5A00BF113F /* CustomCollectionCell.swift in Sources */,
 				F49B5BA52582DEFC00BF113F /* ArticlesViewController.swift in Sources */,
 				F49B5B362582D8D800BF113F /* AppDelegate.swift in Sources */,
+				F47302EB25894705001A3AB6 /* RegisterRouter.swift in Sources */,
 				F49B5CE92583C5D900BF113F /* BrandDetailsInteractor.swift in Sources */,
+				F47302FC25896029001A3AB6 /* LoginViewController.swift in Sources */,
 				F49B5BA32582DEFC00BF113F /* ArticlesPresenter.swift in Sources */,
 				F49B5B382582D8D800BF113F /* SceneDelegate.swift in Sources */,
 				F49B5CE62583C5D900BF113F /* BrandDetailsRouter.swift in Sources */,
 				F49B5CE52583C5D900BF113F /* BrandDetailsWorker.swift in Sources */,
+				F47302E925894705001A3AB6 /* RegisterPresenter.swift in Sources */,
 				F49B5B972582DEB100BF113F /* UserAPI.swift in Sources */,
 				F49B5BE325830EAA00BF113F /* BrandWorker.swift in Sources */,
+				F47302EC25894705001A3AB6 /* RegisterModels.swift in Sources */,
+				F47302FB25896029001A3AB6 /* LoginModels.swift in Sources */,
 				F49B5CE72583C5D900BF113F /* BrandDetailsModels.swift in Sources */,
 				F49B5BA42582DEFC00BF113F /* ArticlesRouter.swift in Sources */,
 			);
